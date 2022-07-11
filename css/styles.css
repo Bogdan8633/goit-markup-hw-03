@@ -72,6 +72,8 @@ body {
 margin-left: auto;
 margin-right: auto;
 width: 1170px;
+padding-left: 10px;
+padding-right: 10px;
 
 outline: 2px solid tomato;
 }
@@ -253,12 +255,21 @@ text-align: center;
 }
 
 
-/*страничка Портфолио*/
+/*===============Cтраничка Портфолио===============*/
 .current {
     color: var(--accent-color);}
 
+.works {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
 /*кнопки-фильтры*/
 .filter {
+    padding: 6px 22px;
+    border-radius: 4px;
+
     color: var(--primery-color);
     background-color: #F5F4FA;
     font-family: var(--primery-font);
@@ -269,18 +280,31 @@ text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
 }
+
 .filter:hover,
 .filter:focus {
     color: var(--light-color);
     background-color: var(--accent-color);
 }
+
+.project-image {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 .title-project {
+    margin-top: 0;
+    margin-bottom: 4px;
+
     font-size: 18px;
     font-weight: var(--bolt-font);
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
 .project {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--secondary-color);
     font-weight: var(--normal-font);
     font-size: var(--secondary-font-size);
