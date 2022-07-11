@@ -22,6 +22,10 @@ body {
     font-family: var(--primery-font);
     letter-spacing: 0,03em;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 
 /* header */
 .menu {
@@ -101,7 +105,7 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 
-outline: 2px solid tomato;
+/* outline: 2px solid tomato; */
 }
 
 .main-nav {
@@ -109,11 +113,14 @@ outline: 2px solid tomato;
     align-items: center;
 }
 
+.container.main-nav {
+    border-bottom: 1px solid #ECECEC;
+}
+
 /* backblack */
 .backblack {
     background-color: #2F303A;
     text-align: center;
-    outline: 1px solid greenyellow;
 }
 .section.backblack {
     padding-top: 0;
@@ -333,8 +340,19 @@ background-color: var(--backgound-gray-color);
 
 
 /*===============Cтраничка Портфолио===============*/
+
 .current {
     color: var(--accent-color);}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter .filter-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .works {
     margin-top: 0;
@@ -343,12 +361,12 @@ background-color: var(--backgound-gray-color);
 }
 
 /*кнопки-фильтры*/
-.filter {
+.filter-button {
     padding: 6px 22px;
     border-radius: 4px;
-
+    
     color: var(--primery-color);
-    background-color: #F5F4FA;
+    background-color: var(--backgound-gray-color);
     font-family: var(--primery-font);
     font-weight: var(--medium-font);
     font-size: var(--secondary-font-size);
@@ -358,8 +376,8 @@ background-color: var(--backgound-gray-color);
     cursor: pointer;
 }
 
-.filter:hover,
-.filter:focus {
+.filter-button:hover,
+.filter-button:focus {
     color: var(--light-color);
     background-color: var(--accent-color);
 }
@@ -378,7 +396,26 @@ background-color: var(--backgound-gray-color);
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
-.project {
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.card-set > .item {
+    border: 1px solid #EEEEEE;
+    flex-basis:calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.card-content {
+    padding: 20px 24px;
+}
+
+.project-description {
     margin-top: 0;
     margin-bottom: 0;
 
