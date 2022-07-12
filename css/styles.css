@@ -29,6 +29,12 @@ img {
 }
 
 /* header */
+.content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -114,18 +120,14 @@ padding-right: 15px;
     align-items: center;
 }
 
-.content {
-    border-bottom: 1px solid #ECECEC;
-}
-
 /* backblack */
 .backblack {
     background-color: #2F303A;
     text-align: center;
 }
 .section.backblack {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 /* hero */
@@ -268,7 +270,12 @@ background-color: var(--backgound-gray-color);
 
 .employee-photo {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.card-information {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .person {
@@ -312,6 +319,9 @@ background-color: var(--backgound-gray-color);
 .contacts-footer {
     display: block;
     margin-top: 0;
+}
+
+.no-markers .contacts-footer:not(:last-child) {
     margin-bottom: 9px;
 }
 
